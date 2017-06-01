@@ -43,19 +43,15 @@ public class MainService {
         concert.setDate(date);
         
         
-        try{
+        
         
          em.persist( concert );
          em.flush();
          em.getTransaction( ).commit( );
-        }
-        catch(Exception e){
-            System.out.println(e.toString());
-        }
-        finally{
+     
          em.close( );
         
-        }
+        
        
     }
     

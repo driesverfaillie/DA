@@ -19,9 +19,9 @@ public class test {
         place.setCountry("Belgium");
         place.setName("testName");
         MainService serv = new MainService();
-        System.out.println(serv.getAllConcerts());
+        
         serv.addConcert("testartist", place, "19/06/2017");
-        System.out.println(serv.getAllConcerts());
+        // System.out.println(serv.getAllConcerts());
     }
     
 }
